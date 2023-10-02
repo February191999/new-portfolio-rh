@@ -14,26 +14,26 @@ html, body {
 }
 
 .index-body {
-    background-image: url(assets/Doria_0156.jpg);
+    background-image: url(Doria_0156.jpg);
     background-repeat: repeat;
     background-size: cover;
     /* padding-top: 50px; */
 }
 
 .about-body {
-    background-image: url(assets/Doria_0159_t.jpg);
+    background-image: url(Doria_0159_t.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .project-body {
-    background-image: url(assets/Doria_0149.jpg);
+    background-image: url(Doria_0149.jpg);
     background-repeat: no-repeat;
     background-size: 1000px 3500px; 
 }
 
 .contact-body {
-    background-image: url(assets/Doria_0157_t.jpg);
+    background-image: url(Doria_0157_t.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
