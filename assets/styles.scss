@@ -154,11 +154,27 @@ footer {
 
 .index-h1 {
     font-weight: 300 bold;
-    font-size: xx-large;
+    font-size: large;
     margin: 0px;
     margin-top: 15px;
     margin-bottom: 9px;
     color: rgb(255, 255, 255);
+
+    @media only screen and (min-width: 576px) {
+        font-size: larger;
+    }
+
+    @media only screen and (min-width: 768px) {
+        font-size: x-large;
+    }
+
+    @media only screen and (min-width: 992px) {
+        font-size: xx-large;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        font-size: xx-large;
+    }
 }
 
 .index-h1-title {
@@ -179,6 +195,10 @@ footer {
     }
 
     @media only screen and (min-width: 992px) {
+        font-size: 10rem;
+    }
+
+    @media only screen and (min-width: 1200px) {
         font-size: 13rem;
     }
 }
@@ -190,7 +210,31 @@ footer {
 }
 
 .second-line {
-    margin-bottom: 35px;
+    margin-bottom: 15px;
+
+    @media only screen and (min-width: 768px) {
+        margin-bottom: 35px;
+    }
+}
+
+.index-h2, .second-line {
+    font-size: large;
+
+    @media only screen and (min-width: 576px) {
+        font-size: larger;
+    }
+
+    @media only screen and (min-width: 768px) {
+        font-size: x-large;
+    }
+
+    @media only screen and (min-width: 992px) {
+        font-size: xx-large;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        font-size: xx-large;
+    }
 }
 
 .social-container {

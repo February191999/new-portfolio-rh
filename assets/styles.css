@@ -153,11 +153,31 @@ footer {
 
 .index-h1 {
   font-weight: 300 bold;
-  font-size: xx-large;
+  font-size: large;
   margin: 0px;
   margin-top: 15px;
   margin-bottom: 9px;
   color: rgb(255, 255, 255);
+}
+@media only screen and (min-width: 576px) {
+  .index-h1 {
+    font-size: larger;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .index-h1 {
+    font-size: x-large;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .index-h1 {
+    font-size: xx-large;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .index-h1 {
+    font-size: xx-large;
+  }
 }
 
 .index-h1-title {
@@ -181,6 +201,11 @@ footer {
 }
 @media only screen and (min-width: 992px) {
   .index-h1-title {
+    font-size: 10rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .index-h1-title {
     font-size: 13rem;
   }
 }
@@ -192,7 +217,36 @@ footer {
 }
 
 .second-line {
-  margin-bottom: 35px;
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 768px) {
+  .second-line {
+    margin-bottom: 35px;
+  }
+}
+
+.index-h2, .second-line {
+  font-size: large;
+}
+@media only screen and (min-width: 576px) {
+  .index-h2, .second-line {
+    font-size: larger;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .index-h2, .second-line {
+    font-size: x-large;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .index-h2, .second-line {
+    font-size: xx-large;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .index-h2, .second-line {
+    font-size: xx-large;
+  }
 }
 
 .social-container {
