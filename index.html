@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html; charset= ISO-8859-1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rye Hsu</title>
     <link rel="stylesheet" href="assets/styles.css">
     <link rel="icon" href="assets/RH_logo.jpg" type="image/jpg">
-    <script src="main.js"></script>
+    <script src="assets/main.js"></script>
     <script src="https://kit.fontawesome.com/f4ac71a6d7.js" crossorigin="anonymous"></script>
 </head>
 <body class="index-body">
@@ -17,7 +17,22 @@
                     <a class="nav-title" href="index.html">
                         <img class="logo-img" src="assets/RH_logo.jpg" alt="logo">
                     </a>
-                    <ul class="nav-list">
+                    <div class="hamburger">
+                        <p id="hamburger-line-1" class="hamburger-line"></p>
+                        <p id="hamburger-line-2" class="hamburger-line"></p>
+                        <p id="hamburger-line-3" class="hamburger-line"></p>
+                    </div>
+
+                    <script>
+                        document.querySelector(".hamburger").addEventListener("click",function() {
+                            document.getElementById("hamburger-line-1").classList.toggle("active")
+                            document.getElementById("hamburger-line-2").classList.toggle("active")
+                            document.getElementById("hamburger-line-3").classList.toggle("active")
+                            document.getElementById("nav-links").classList.toggle("active")
+                        })
+                    </script>
+
+                    <ul class="nav-list" id="nav-links">
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
                         </li>

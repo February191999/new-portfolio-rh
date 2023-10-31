@@ -15,7 +15,22 @@
                     <a class="nav-title" href="index.html">
                         <img class="logo-img" src="assets/RH_logo.jpg" alt="logo">
                     </a>
-                    <ul class="nav-list">
+                    <div class="hamburger">
+                        <p id="hamburger-line-1" class="hamburger-line"></p>
+                        <p id="hamburger-line-2" class="hamburger-line"></p>
+                        <p id="hamburger-line-3" class="hamburger-line"></p>
+                    </div>
+
+                    <script>
+                        document.querySelector(".hamburger").addEventListener("click",function() {
+                            document.getElementById("hamburger-line-1").classList.toggle("active")
+                            document.getElementById("hamburger-line-2").classList.toggle("active")
+                            document.getElementById("hamburger-line-3").classList.toggle("active")
+                            document.getElementById("nav-links").classList.toggle("active")
+                        })
+                    </script>
+
+                    <ul class="nav-list" id="nav-links">
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
                         </li>
@@ -30,25 +45,25 @@
             </nav>
             <div class="content">
                 <section class="container page contact-section">
-                    <article class="article-div item-1">
+                    <article class="article-div item-1 first-four">
                         <header class="content-header">
                             <h1>
                                 Contact Me
                             </h1>
                         </header>
                     </article>
-                    <div class="item-2">
+                    <div class="item-2 first-four contact-page-item">
                         <h2 class="invitation">Let's work together</h2>
                     </div>
-                    <div class="item-3">
+                    <div class="item-3 first-four contact-page-item">
                         <h3 class="contact-page-h3">Email</h3>
                         <a class="contact-email contact-info" href="mailto:rye.t.hsu@gmail.com">rye.t.hsu@gmail.com</a>
                     </div>
-                    <div class="item-4">
+                    <div class="item-4 first-four contact-page-item">
                         <h3 class="contact-page-h3">Phone</h3>
                         <p class="contact-info">+66 (0)93 379 5395</p>
                     </div>
-                    <div class="item-5">
+                    <div class="item-5 contact-page-item">
                         <h3 class="contact-page-h3">Location</h3>
                         <div class="google-map-div">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63359.67171163936!2d100.45880624

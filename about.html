@@ -15,7 +15,22 @@
                     <a class="nav-title" href="index.html">
                         <img class="logo-img" src="assets/RH_logo.jpg" alt="logo">
                     </a>
-                    <ul class="nav-list">
+                    <div class="hamburger">
+                        <p id="hamburger-line-1" class="hamburger-line"></p>
+                        <p id="hamburger-line-2" class="hamburger-line"></p>
+                        <p id="hamburger-line-3" class="hamburger-line"></p>
+                    </div>
+
+                    <script>
+                        document.querySelector(".hamburger").addEventListener("click",function() {
+                            document.getElementById("hamburger-line-1").classList.toggle("active")
+                            document.getElementById("hamburger-line-2").classList.toggle("active")
+                            document.getElementById("hamburger-line-3").classList.toggle("active")
+                            document.getElementById("nav-links").classList.toggle("active")
+                        })
+                    </script>
+
+                    <ul class="nav-list" id="nav-links">
                         <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
                         </li>
